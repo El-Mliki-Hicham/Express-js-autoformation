@@ -1,10 +1,21 @@
 extends layout
 
 block content
-  
 
-  h1 This is my data:
 
-  for item in data
-    h2= item.name
-    p ID: #{item.id}
+
+
+    table 
+      thead 
+        tr
+          th= "Id" 
+          th= "Name" 
+      tbody 
+        each item in data
+          tr 
+            td= item.id
+            td= item.name
+
+
+
+

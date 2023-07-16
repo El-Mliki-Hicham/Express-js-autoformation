@@ -10,7 +10,7 @@ var i = data.findIndex(value=>value.id === 2 )
 
 router.get('/table', function(req, res, next) {
   res.render('users_table',{data:data});
-
+ 
 });
 
 router.get('/:id', function(req, res, next) {
